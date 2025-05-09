@@ -1,0 +1,29 @@
+# Python кэш
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Игнорируем скрытые системные файлы
+.DS_Store
+Thumbs.db
+
+# PyCharm, VSCode и др. IDE
+.idea/
+.vscode/
+*.swp
+
+# Игнор кэшированных и временных файлов
+*.log
+*.tmp
+*.bak
+
+# Игнор media/graphics/audio
+FlameyProject/graphics/__pycache__/
+FlameyProject/audio/__pycache__/
+
+# Игнор файлов pipenv и virtualenv (если используешь)
+.env
+.venv/
+venv/
+ENV/
+env/

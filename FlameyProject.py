@@ -18,9 +18,9 @@ text2 = "christmas ver."
 def main_menu():
     global screen, width, height
 
-    game_button = Button(710, 280, 530, 160, "", "FlameyProject/graphics/play_button.png", "FlameyProject/graphics/play_button_hover.png", "FlameyProject/audio/click.mp3")
-    quit_button = Button(710, 590, 530, 160, "", "FlameyProject/graphics/quit.png", "FlameyProject/graphics/quit_hover.png", "FlameyProject/audio/click.mp3")
-    mute_button = Button(10, 900, 100, 100 , "" , "FlameyProject/graphics/muteon.png", "FlameyProject/graphics/muteon_hover.png", "FlameyProject/audio/click.mp3")
+    game_button = Button(710, 280, 530, 160, "", "graphics/play_button.png", "graphics/play_button_hover.png", "audio/click.mp3")
+    quit_button = Button(710, 590, 530, 160, "", "graphics/quit.png", "graphics/quit_hover.png", "audio/click.mp3")
+    mute_button = Button(10, 900, 100, 100 , "" , "graphics/muteon.png", "graphics/muteon_hover.png", "audio/click.mp3")
 
     btns = [game_button, quit_button, mute_button] # Массив со всеми нашими кнопками
 
@@ -105,7 +105,7 @@ def ball_story():
             self.balls_played = 0
 
         def run(self):
-            back_button = Button(0, 890, 230, 100, "", "FlameyProject/graphics/exit.png", "FlameyProject/graphics/exit_hover.png", "FlameyProject/audio/click.mp3")
+            back_button = Button(0, 890, 230, 100, "", "graphics/exit.png", "graphics/exit_hover.png", "audio/click.mp3")
             btns = [back_button]
 
             self.start_time = pygame.time.get_ticks()

@@ -22,11 +22,11 @@ class Button:
     
     def update_image(self, mute):
         if mute:
-            self.image = pygame.image.load("FlameyProject/graphics/muteon.png")
-            self.hover_image = pygame.image.load("FlameyProject/graphics/muteon_hover.png")
+            self.image = pygame.image.load("graphics/muteon.png")
+            self.hover_image = pygame.image.load("graphics/muteon_hover.png")
         else:
-            self.image = pygame.image.load("FlameyProject/graphics/muteoff.png")
-            self.hover_image = pygame.image.load("FlameyProject/graphics/muteoff_hover.png")
+            self.image = pygame.image.load("graphics/muteoff.png")
+            self.hover_image = pygame.image.load("graphics/muteoff_hover.png")
         
         self.image = pygame.transform.scale(self.image, (self.width, self.height))
         self.hover_image = pygame.transform.scale(self.hover_image, (self.width, self.height))
@@ -35,7 +35,7 @@ class Button:
         current_image = self.hover_image if self.is_hovered else self.image
         screen.blit(current_image, self.rect.topleft)
 
-        font = pygame.font.Font("FlameyProject/graphics/Montserrat-Bold.ttf", 48)
+        font = pygame.font.Font("graphics/Montserrat-Bold.ttf", 48)
         text_surface = font.render(self.text, True, (255, 255, 255))
         text_rect = text_surface.get_rect(center = self.rect.center)
         screen.blit(text_surface, text_rect)

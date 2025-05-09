@@ -15,8 +15,8 @@ class Board():
         self.updated_coords = obstacle_start
 
         # Кнопка play
-        self.play_up = pygame.image.load("FlameyProject/graphics/play.png").convert_alpha()
-        self.play_down = pygame.image.load("FlameyProject/graphics/play_hover.png").convert_alpha()
+        self.play_up = pygame.image.load("graphics/play.png").convert_alpha()
+        self.play_down = pygame.image.load("graphics/play_hover.png").convert_alpha()
         self.pressing_play = False
         self.play_orig_width = self.play_up.get_width()
         self.play_orig_height = self.play_up.get_height()
